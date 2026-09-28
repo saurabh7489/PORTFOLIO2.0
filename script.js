@@ -1,18 +1,26 @@
-document.getElementById('emailbtn').addEventListener('click',function(){
+const emailbtn = document.getElementById("emailbtn");
+const Githubbtn = document.getElementById("Githubbtn");
+const LinkedInbtn = document.getElementById("LinkedInbtn");
+const Twitterbtn = document.getElementById("Twitterbtn");
+
+
+
+emailbtn.addEventListener('click',function(){
     window.location.href="mailto:saurabhpandey7489@gmail.com";
 })
 
 
-document.getElementById('Githubbtn').addEventListener('click',function(){
+Githubbtn.addEventListener('click',function(){
    window.location.href="https://github.com/saurabh7489";
     
     
 })
 
-document.getElementById("LinkedInbtn").addEventListener('click',function(){
+LinkedInbtn.addEventListener('click',function(){
     window.location.href="https://www.linkedin.com/in/sourabhsprofile/";
 })
 
-document.getElementById('Twitterbtn').addEventListener('click',function(){
+
+Twitterbtn.addEventListener('click',function(){
     window.location.href="https://x.com/Sourbhh01";
 })

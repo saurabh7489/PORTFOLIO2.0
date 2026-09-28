@@ -6,18 +6,18 @@ const Twitterbtn = document.getElementById("Twitterbtn");
 
 
 emailbtn.addEventListener('click',function(){
-    window.location.href="mailto:saurabhpandey7489@gmail.com";
+    window.open("mailto:saurabhpandey7489@gmail.com");
 })
 
 
 Githubbtn.addEventListener('click',function(){
-   window.location.href="https://github.com/saurabh7489";
+   window.open("https://github.com/saurabh7489");
     
     
 })
 
 LinkedInbtn.addEventListener('click',function(){
-    window.location.href="https://www.linkedin.com/in/sourabhsprofile/";
+    window.open("https://www.linkedin.com/in/sourabhsprofile/");
 })
 
 

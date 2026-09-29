@@ -75,7 +75,7 @@ Twitterbtn.addEventListener('click',function(){
 //     }
 
 // })
-
+ 
 
 trigger.addEventListener("click", function () {
   // Toggle arrow rotation

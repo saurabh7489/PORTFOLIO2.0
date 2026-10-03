@@ -441,6 +441,9 @@
   .bg-\[\#121212\] {
     background-color: #121212;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .p-1 {
     padding: var(--spacing);
   }
@@ -853,6 +856,9 @@
     .md\:font-bold {
       --tw-font-weight: var(--font-weight-bold);
       font-weight: var(--font-weight-bold);
+    }
+    .md\:text-\[\#423939\] {
+      color: #423939;
     }
     .md\:text-\[2\] {
       color: 2;

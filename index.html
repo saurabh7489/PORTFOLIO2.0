@@ -8,7 +8,7 @@
 </head>
 
 
-<body class="bg-white text-zinc-950 dark:bg-black  dark:text-zinc-50" >
+<body class="bg-white text-zinc-950 dark:bg-black  dark:text-zinc-50  transition-colors duration-500" >
   <header>
   <div class=""> 
     
@@ -30,8 +30,43 @@
 
 </div>
 
-<div  class="mt-2 z-50 absolute right-3 text-[14px]  text-zinc-800 dark:text-zinc-100 leading-relaxed">
-<button id="themeToggle"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:1;"><circle cx="12" cy="12" r="4.25"/><path  d="M12 2.75v1.5M5.46 5.46l1.06 1.06M12 19.75v1.5m5.48-3.77l1.06 1.06M2.75 12h1.5m1.21 6.54l1.06-1.06M19.75 12h1.5m-3.77-5.48l1.06-1.06"/></svg></button>
+<div  class="mt-2 z-50 absolute right-10 text-[14px]  text-zinc-800 dark:text-zinc-100 leading-relaxed">
+
+<button id="themeToggle" aria-label="Toggle theme">
+   <!-- Moon: visible in bright mode -->
+
+   <svg id="moonIcon" class="absolute inset-0 transition-all duration-300 ease-in-out 
+               opacity-100 rotate-0 scale-100
+               dark:opacity-0 dark:-rotate-90 dark:scale-75"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24" width="24" version="1.1" id="Capa_1" viewBox="0 0 250.609 250.609" xml:space="preserve" fill="currentColor">
+<g>
+	<g>
+		<path style="fill:#100f0f;" d="M82.271,49.895c-24.763,15.019-40.3,42.072-40.3,71.4c0,46.064,37.472,83.536,83.536,83.536    c40.181,0,73.727-27.835,81.698-66.196c-9.535,3.127-19.416,4.708-29.488,4.708C125.752,143.342,83.351,101.61,82.271,49.895z"/>
+		<path style="fill:#fefdff;" d="M125.304,0C56.214,0,0,56.208,0,125.304c0,69.09,56.214,125.304,125.304,125.304    s125.304-56.214,125.304-125.304C250.609,56.208,194.395,0,125.304,0z M125.507,216.764c-52.64,0-95.47-42.83-95.47-95.47    c0-37.341,22.024-71.459,56.118-86.913l9.32-4.225l-0.913,10.191c-0.221,2.488-0.382,4.988-0.382,7.53    c0,46.064,37.472,83.536,83.536,83.536c11.886,0,23.468-2.518,34.423-7.488l9.32-4.225l-0.907,10.191    C216.12,179.418,175.265,216.764,125.507,216.764z"/>
+	</g>
+</g>
+</svg>
+        <!-- <svg id="moonIcon" class="absolute inset-0 transition-all duration-300 ease-in-out
+               opacity-100 rotate-0 scale-100
+               dark:opacity-0 dark:-rotate-90 dark:scale-75"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="currentColor">
+            <path d="M21 15.5A9 9 0 0 1 8.5 3
+                     9 9 0 1 0 21 15.5Z"/>
+        </svg> -->
+  <!-- sun:visible in dark mode -->
+  <svg id="sunIcon" class="absolute inset-0 transition-all duration-300 ease-in-out
+               opacity-0 rotate-90 scale-75
+               dark:opacity-100 dark:rotate-0 dark:scale-100"
+   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+    <circle cx="12" cy="12" r="4.25"/>
+    <path  d="M12 2.75v1.5M5.46 5.46l1.06 1.06M12 19.75v1.5m5.48-3.77l1.06 1.06M2.75 12h1.5m1.21 6.54l1.06-1.06M19.75 12h1.5m-3.77-5.48l1.06-1.06"/>
+  </svg>
+
+</button>
 </div>
 
 </div>

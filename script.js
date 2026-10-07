@@ -9,6 +9,15 @@ const view = document.querySelectorAll(".view");
 
 const Aboutcontent = document.querySelectorAll(".Aboutcontent");
 
+const themeToggle = document.getElementById("themeToggle");
+
+
+
+
+themeToggle.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+});
+
 emailbtn.addEventListener('click',function(){
     window.open("mailto:saurabhpandey7489@gmail.com");
 })

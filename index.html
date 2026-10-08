@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio!!</title>
+    <script>
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+    } else if (savedTheme === "light") {
+        document.documentElement.classList.remove("dark");
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.classList.add("dark");
+    }
+</script>
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
@@ -90,7 +101,7 @@
 </button>
 
 
-<hr class="text-[#423939] mb-2 mt-7 md:mt-14 md:mb-4 ">
+<hr class="text-zinc-300 dark:text-[#423939] mb-2 mt-7 md:mt-14 md:mb-4 ">
 
 
 </div>
@@ -128,7 +139,7 @@
 </div>
   </header>
 
- <hr class="text-[#423939] mb-7 mt-7 md:mt-14 md:mb-10 ">
+ <hr class="text-zinc-300 dark:text-[#423939] mb-7 mt-7 md:mt-14 md:mb-10 ">
 
 
 
@@ -269,7 +280,7 @@
 </div>
 
 
-<hr class="text-[#423939] mb-2 mt-20 md:mt-24 md:mb-10 ">
+<hr class="text-zinc-300 dark:text-[#423939] mb-2 mt-20 md:mt-24 md:mb-10 ">
 
 
 <div class="skills mt-6 flex flex-col  scroll-mt-24 ">
@@ -448,7 +459,7 @@ dark:text-zinc-500 dark:bg-[#121212] box-border border-1 dark:border-zinc-600 fo
 </div>
 
 
-<hr class="text-[#423939] mb-2 mt-10 ">
+<hr class="text-zinc-300 dark:text-[#423939] mb-2 mt-10 ">
 
 
 <div class="skills mt-6 flex flex-col  scroll-mt-24">
@@ -568,20 +579,20 @@ dark:text-zinc-500 dark:bg-[#121212] box-border border-1 dark:border-zinc-600 fo
 
 </div>
 
-<hr class=" mb-2 mt-10 text-[#423939]">
+<hr class=" mb-2 mt-10 text-zinc-300 dark:text-[#423939]">
 
 
 <!-- Experiences -->
 
 
-<div>
+<div class=" mb-15 ">
 
-  <div class="py-2 mt-5 ml-4 mb-6 md:ml-6 md:mb-10">
+  <div class="py-2 mt-10 ml-4 mb-6 md:ml-6 md:mb-10">
     <h1  class="text-[18px] font-bold text-zinc-900 dark:text-zinc-100 acking-tight md:text-[22px]">Experiences and Certificate</h1>
   </div>
 
 
-<div class="flex items-center">
+<div class="mt-14 flex items-center">
 
 
   <div class="">
@@ -634,7 +645,7 @@ dark:text-zinc-500 dark:bg-[#121212] box-border border-1 dark:border-zinc-600 fo
 </div>
 
 
-<hr class=" mb-2 mt-10 text-[#423939]">
+<hr class=" mb-2 mt-10 text-zinc-300 dark:text-[#423939]">
 
 
 
@@ -642,14 +653,14 @@ dark:text-zinc-500 dark:bg-[#121212] box-border border-1 dark:border-zinc-600 fo
 
 <div>
 
-<div class="py-2 mt-5 ml-4 mb-6 md:ml-6 md:mb-10">
+<div class="py-2 mt-10 ml-4 mb-6 md:ml-6 md:mb-10">
   <h1 class="text-[18px] font-bold text-zinc-900 dark:text-zinc-100 acking-tight md:text-[22px]"
   >
      Education
   </h1>
   </div>
 
-  <div class="mt-10 ml-4  mr-4 ">
+  <div class="mt-13 ml-4  mr-4 ">
     <div class="mb-4">
   <p style="word-spacing: 5px; "  >
     <b>B.Tech — Computer Science & Engineering </b></p>
@@ -673,18 +684,41 @@ Alongside academics, I spend time building projects, participating in hackathons
 
 </div>
 
-<hr class=" mb-2 mt-10 text-[#423939]">
+</main>
+
+<hr class=" mb-2 mt-20 text-zinc-300 dark:text-[#423939]">
+
+<!-- Footer -->
+
+<footer class="mt-10   py-8 relative bottom-0 ">
 
 
+<div class="flex flex-col  justify-center items-center gap-3 text-center ">
 
 
-<!-- GitHub Activity -->
+  
+  <h1 class="text-[18px]  text-zinc-900 dark:text-zinc-100 tacking-tight md:text-[22px]">That's all for now. 👋
+<b> Thanks for scrolling this far.</b>
+</h1>
 
 
+<div class="flex gap-4 text-sm text-zinc-600 dark:text-zinc-400">
+<a href="https://github.com/saurabh7489" class="hover:text-zinc-900 dark:hover:text-zinc-100">GitHub</a>
+<p>·</p>
+<a href="https://www.linkedin.com/in/sourabhsprofile/" class="hover:text-zinc-900 dark:hover:text-zinc-100 gap-4"> LinkedIn</a>
+<p>·</p>
+<a href="https://x.com/Sourbhh01" class="hover:text-zinc-900 dark:hover:text-zinc-100"> Email</a>
+</div>
 
+ <p class="text-sm text-zinc-500">
+      © 2026 Sourabh Pandey
+    </p>
 
+</div>
 
-  </main>
+</footer>
+
+  
    <script src="./script.js"></script>
 </body>
 </html>

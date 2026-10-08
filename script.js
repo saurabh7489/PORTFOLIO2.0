@@ -10,15 +10,11 @@ const view = document.querySelectorAll(".view");
 const Aboutcontent = document.querySelectorAll(".Aboutcontent");
 
 const themeToggle = document.getElementById("themeToggle");
-const moonIcon = document.getElementById("moonIcon");
-const sunIcon = document.getElementById("sunIcon");
-
-
 
 themeToggle.addEventListener("click", () => {
-  document.documentElement.classList.toggle("dark");
-//   moonIcon.classList.toggle("hidden");
-//     sunIcon.classList.toggle("hidden");
+    const isDark = document.documentElement.classList.toggle("dark");
+
+    localStorage.setItem("theme", isDark ? "dark" : "light");
 });
 
 emailbtn.addEventListener('click',function(){

@@ -3,7 +3,7 @@ const Githubbtn = document.getElementById("Githubbtn");
 const LinkedInbtn = document.getElementById("LinkedInbtn");
 const Twitterbtn = document.getElementById("Twitterbtn");
 
-const view02 = document.getElementById("view02");
+
 
 const view = document.querySelectorAll(".view");
 
@@ -40,14 +40,18 @@ Twitterbtn.addEventListener('click',function(){
 
 
 
-view.forEach((view)=>{
-view.addEventListener('click',function(){
-  const Aboutcontent=view.parentElement.parentElement.querySelector(".Aboutcontent");
+view.forEach((arrow)=>{
+   arrow.parentElement.addEventListener("click", function () {
 
-   view.classList.toggle("rotate-180");
+
+  const Aboutcontent=this.parentElement.querySelector(".Aboutcontent");
+
+
    
-    Aboutcontent.classList.toggle("toggle");
+    
      Aboutcontent.style.transition = "transform 0.5s ease-in 0.5s ";
+    arrow.classList.toggle("rotate-180");
+     Aboutcontent.classList.toggle("toggle");
       Aboutcontent.classList.toggle("max-h-[100vh]");
    Aboutcontent.classList.toggle("opacity-0");
 

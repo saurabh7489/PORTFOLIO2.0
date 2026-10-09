@@ -30,7 +30,7 @@
    
     <div class="flex gap-4">
 
-      <img class=" h-[90px] w-auto mt-2 z-1 rounded-[6px] border-1 border-zinc-600 shadow-white dark:border-zinc-300 dark:shadow-black shadow-md ml-3 md:h-[150px] md:ml-6 " src="./img/portfolioimg.png"   alt="profile" >
+      <img class=" h-[90px] w-auto mt-2 z-1 rounded-[6px] border border-zinc-600 shadow-white dark:border-zinc-300 dark:shadow-black shadow-md ml-3 md:h-[150px] md:ml-6 cursor-pointer transition-transform duration-200 hover:scale-101 " src="./img/portfolioimg.png"   alt="profile" onclick="openProfileImage()">
 
 
 <div class="flex flex-col justify-center pt-8 ">
@@ -97,7 +97,7 @@
 <div>
 <button id="emailbtn" type="button" class="ml-4 mt-5 rounded-lg space-x-2 text-zinc-800 bg-[#ececec] dark:text-zinc-500  dark:bg-[#121212] box-border border border-transparent font-medium leading-5 rounded-base text-sm px-2 py-2  text-center inline-flex items-center hover:bg-[#e6e6e6] hover:text-zinc-700 dark:hover:bg-[#1e1e1e]  dark:hover:text-zinc-400 md:ml-6 md:mt-8 md:px-4 md:py-2.5">
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail preview-icon md:h-[20px] md:w-[20px]"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
- <span class="md:text-[18px]">Sand an email</span>
+ <span class="md:text-[18px]">Send an email</span>
 </button>
 
 
@@ -143,6 +143,49 @@
 
 
 
+<!-- EDUCATION -->
+
+<div>
+
+<div class="py-2 mt-10 ml-4 mb-6 md:ml-6 md:mb-10">
+  <h1 class="text-[18px] font-bold text-zinc-900 dark:text-zinc-100 acking-tight md:text-[22px]"
+  >
+     Education
+  </h1>
+  </div>
+
+  <div class="mt-13 ml-4 md:ml-6  md:mr-5  ">
+
+    <div class="mb-4 md:text-[20px]">
+  <p style="word-spacing: 5px; "  >
+    <b>B.Tech — Computer Science & Engineering </b></p>
+  
+  <p class="mt-2">
+   <b>
+Baderia Global Institute of Engineering and Management, Jabalpur</b>
+<br>
+<div class="text-[15px]">
+2024 — 2028
+</div> 
+</p>
+</div>
+
+
+<div class="leading-7">
+<p class="text-zinc-950 dark:text-zinc-300 mt-9">
+Currently pursuing my B.Tech in Computer Science & Engineering. My studies have given me a foundation in programming, data structures, algorithms, databases, operating systems, computer networks, and software engineering.
+</p>
+
+<p class=" text-zinc-950 dark:text-zinc-300 mt-9 mb-6">
+Alongside academics, I spend time building projects, participating in hackathons, practicing DSA, and exploring modern web development.</p>
+</div>
+</div>
+
+</div>
+
+</main>
+
+<hr class=" mb-2 mt-20 text-zinc-300 dark:text-[#423939]">
 
 
 <!-- main section (about Me ) -->
@@ -286,7 +329,7 @@
 <div class="skills mt-6 flex flex-col  scroll-mt-24 ">
 
 <div class="py-2 mt-5 ml-4 mb-6 md:ml-6 md:mb-12" >
-  <h2 class="text-[18px] font-bold text-white md:text-[22px]">Skills & Technologies</h2>
+  <h2 class="text-[18px] font-bold dark:text-whit  md:text-[22px]">Skills & Technologies</h2>
 </div>
 
 <div class="ml-4   mb-4 md:ml-6">
@@ -588,58 +631,90 @@ dark:text-zinc-500 dark:bg-[#121212] box-border border-1 dark:border-zinc-600 fo
 <div class=" mb-15 ">
 
   <div class="py-2 mt-10 ml-4 mb-6 md:ml-6 md:mb-10">
-    <h1  class="text-[18px] font-bold text-zinc-900 dark:text-zinc-100 acking-tight md:text-[22px]">Experiences and Certificate</h1>
+    <h1  class="text-[18px] font-bold text-zinc-900 dark:text-zinc-100 acking-tight md:text-[22px]">Experiences and Certificates</h1>
   </div>
 
 
-<div class="mt-14 flex items-center">
+<div class="card mt-14 ml-5   md:ml-6 md:mb-10">
+
+  
+
+<div class="flex ">
 
 
-  <div class="">
-<img class="ml-5 h-11  w-11.5   rounded-[8px]" src="./img/bharatacademixlogo.png" alt="">
-</div>
+  <div class="shrink-0">
+<img class="  h-11 w-11 mt-1   rounded-[8px]" src="./img/bharatacademixlogo.png" alt="">
+    </div>
 
 
 <div class="">
-  <h1 class="ml-5  ">Global Innovation Hackathon 2026 </h1>
+  <h1 class="ml-6 font-bold text-zinc-950 dark:text-zinc-200 ">Global Innovation Hackathon 2026 </h1>
 
-  <div class="flex items-center">
-<span class="ml-5">September 2026</span>
+
+  
+  <div class="flex flex-row items-center">
+<span class="ml-6">September 2026</span>
 <svg  viewBox="0 0 24 24" class="view w-3.5 h-3.5 ml-0.5 text-zinc-400 transition-transform duration-300 " stroke="currentColor" stroke-width="2.5"
             fill="none">
        
             <polyline points="6 9 12 15 18 9"></polyline>
     </svg>
     </div>
+
+    <div  class="ml-6 mb-6 Aboutcontent mr-2 max-h-0 mt-4 overflow-hidden text-zinc-800 dark:text-zinc-500 opacity-0 transition-all duration-300 ease-in-out  md:mr-4">
+      <span id="toggle" class="h-0"><b>Team Leader — Global Innovation Hackathon 2026</b> <br>
+
+Participated in the Global Innovation Hackathon 2026 by building a solution with Team Heraferi. As the team leader, I collaborated with my teammates to develop our idea, work through challenges, and turn our concept into a practical solution. The experience strengthened my teamwork, problem-solving, and project development skills.
+</span>
+      <div class="flex justify-center items-center">
+      <img class=" h-44 md:h-60 w-auto" src="./Certificate/Screenshot 2026-10-09 171714.png" alt="Certificate"></div>
     </div>
+  </div>
 
-</div>
+  </div>
+
+    
+    
 
 
-<div class=" mt-12 flex items-center">
 
 
-  <div class="">
-<img class="ml-5 h-11  rounded-[8px]" src="./img/hackDevengers.webp" alt="">
+
+<div class="flex mt-6">
+
+  <div class="shrink-0">
+<img class=" h-11 mt-1 rounded-[8px]" src="./img/hackDevengers.webp" alt="">
 </div>
 
 
 <div>
-  <h1 class="ml-6">Hack Devengers Online Hackathon 2.0</h1>
+  <h1 class="ml-6 font-bold text-zinc-950 dark:text-zinc-200">Hack Devengers Online Hackathon 2.0</h1>
 
-  <div class="flex items-center">
+  <div class="flex  items-center">
 <span class="ml-6 ">September 2026</span>
 <svg  viewBox="0 0 24 24" class="view w-3.5 h-3.5 ml-0.5 text-zinc-600 dark:text-zinc-400 transition-transform duration-300 " stroke="currentColor" stroke-width="2.5"
             fill="none">
        
             <polyline points="6 9 12 15 18 9"></polyline>
     </svg>
+          </div>
+       <div  class="ml-6 mb-4 Aboutcontent mr-2 max-h-0 mt-4 overflow-hidden text-zinc-800 dark:text-zinc-500 opacity-0 transition-all duration-300 ease-in-out  md:mr-4">
+      <span id="toggle" class="h-0"><b>Hack Devengers 2.0 — Hackathon Participant</b><br>
+
+Participated in Hack Devengers 2.0 and successfully submitted a project as part of the hackathon. The experience involved turning an idea into a working project, tackling challenges, and developing a solution within a deadline. It helped me gain practical project-building experience and understand the value of teamwork and problem-solving.
+</span>
+        <div class="flex justify-center items-center">
+      <img class=" h-44 md:h-60 w-auto" src="./Certificate/Devengers.png" alt="Certificate">
+        </div>
     </div>
+
+
+    
     </div>
     
 </div>
 
-
+</div>
 
 
 </div>
@@ -649,44 +724,6 @@ dark:text-zinc-500 dark:bg-[#121212] box-border border-1 dark:border-zinc-600 fo
 
 
 
-<!-- EDUCATION -->
-
-<div>
-
-<div class="py-2 mt-10 ml-4 mb-6 md:ml-6 md:mb-10">
-  <h1 class="text-[18px] font-bold text-zinc-900 dark:text-zinc-100 acking-tight md:text-[22px]"
-  >
-     Education
-  </h1>
-  </div>
-
-  <div class="mt-13 ml-4  mr-4 ">
-    <div class="mb-4">
-  <p style="word-spacing: 5px; "  >
-    <b>B.Tech — Computer Science & Engineering </b></p>
-  
-  <p class="mt-2">
-   <b>
-Baderia Global Institute of Engineering and Management, Jabalpur</b>
-<br> 
-2024 — 2028
-</p>
-</div>
-<div class="leading-7">
-<p class=" mt-9">
-Currently pursuing my B.Tech in Computer Science & Engineering. My studies have given me a foundation in programming, data structures, algorithms, databases, operating systems, computer networks, and software engineering.
-</p>
-
-<p class=" mt-9 mb-6">
-Alongside academics, I spend time building projects, participating in hackathons, practicing DSA, and exploring modern web development.</p>
-</div>
-</div>
-
-</div>
-
-</main>
-
-<hr class=" mb-2 mt-20 text-zinc-300 dark:text-[#423939]">
 
 <!-- Footer -->
 
@@ -697,8 +734,8 @@ Alongside academics, I spend time building projects, participating in hackathons
 
 
   
-  <h1 class="text-[18px]  text-zinc-900 dark:text-zinc-100 tacking-tight md:text-[22px]">That's all for now. 👋
-<b> Thanks for scrolling this far.</b>
+  <h1 class="text-[18px]  text-zinc-900 dark:text-zinc-100 tacking-tight md:text-[22px]"><b>That's all for now. 👋
+ Thanks for scrolling this far.</b>
 </h1>
 
 
@@ -718,6 +755,21 @@ Alongside academics, I spend time building projects, participating in hackathons
 
 </footer>
 
+<div
+  id="imageModal"
+  class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+  onclick="closeProfileImage()"
+>
+  
+
+  <img
+    id="enlargedProfileImage"
+    src="./img/portfolioimg.png"
+    alt="Enlarged profile picture"
+    class="max-h-[85vh] max-w-[90vw] rounded-xl object-contain shadow-2xl cursor-pointer"
+    onclick="event.stopPropagation()"
+  />
+</div>
   
    <script src="./script.js"></script>
 </body>

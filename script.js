@@ -48,7 +48,7 @@ view.addEventListener('click',function(){
    
     Aboutcontent.classList.toggle("toggle");
      Aboutcontent.style.transition = "transform 0.5s ease-in 0.5s ";
-      Aboutcontent.classList.toggle("max-h-40");
+      Aboutcontent.classList.toggle("max-h-[100vh]");
    Aboutcontent.classList.toggle("opacity-0");
 
 
@@ -56,3 +56,26 @@ view.addEventListener('click',function(){
 });
 });
  
+
+function openProfileImage() {
+  const modal = document.getElementById("imageModal");
+
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+  document.body.style.overflow = "hidden";
+}
+
+function closeProfileImage() {
+  const modal = document.getElementById("imageModal");
+
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  document.body.style.overflow = "";
+}
+
+// Close with the Escape key
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeProfileImage();
+  }
+});
